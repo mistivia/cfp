@@ -1,13 +1,13 @@
 # C for Functional Programming
 
-Use C macros to create a new line in C, which becomes a lisp-like dynamic functional programming language.
+Use macros to create a new lisp-like dynamic functional programming language in plain C.
 
 I used 2 GNU C extensions here to create lambda:
 
-- [Nested function]()
-- [Statement expresiion]()
+- [Nested function](https://gcc.gnu.org/onlinedocs/gcc/Nested-Functions.html)
+- [Statement expression](https://gcc.gnu.org/onlinedocs/gcc/Statement-Exprs.html)
 
-Which means this project can only be compiled in gcc. Statement expression is supported in clang, but nested function is not. However, clang support another extension which serves similar purpose: [block](). But I didn't add support for it in this project.
+Which means this project can only be compiled in gcc. Statement expressions are supported in clang, but nested functions are not. However, clang support another extension which serves similar purpose: [blocks](https://en.wikipedia.org/wiki/Blocks_(C_language_extension)). But I didn't add a support for it in this project.
 
 Here is a example of counter implemented using closure:
 
