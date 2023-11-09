@@ -24,10 +24,24 @@ Here is a example of counter implemented using closure:
 
     define(cnt, _(get_counter, make_int(0)))
 
+
     printf("%d\n", _(cnt).integer);
     printf("%d\n", _(cnt).integer);
     printf("%d\n", _(cnt).integer);
     printf("%d\n", _(cnt).integer);
     printf("%d\n", _(cnt).integer);
 
+    // Equivalent lisp code looks like:
+    // (define get-counter (lambda (init_value)
+    //     (define value init_value)
+    //     (define counter (lambda ()
+    //         (set! value (+ value 1))))
+    //     counter))
+    //
+    // (define cnt (get-counter 0))
+    //
+    // (display (cnt))
+    // (display (cnt))
+    // (display (cnt))
+    // (display (cnt))
 
