@@ -1,4 +1,4 @@
-// Copyright (C) 2023 Mistivia <mistivia@soverin.net>
+// Copyright (C) 2023 Mistivia <i@mistivia.com>
 // Licensed under The 2-Clause BSD License
 
 #ifndef HTABLE_H_
